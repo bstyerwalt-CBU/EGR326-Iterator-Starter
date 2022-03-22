@@ -40,7 +40,7 @@ public class DinerMenu {
 	}
 
 	public Iterator createIterator() {
-		return new DinerMenuIterator(menuItems);
+		// Implement for Improvement1
 	}
 
 }

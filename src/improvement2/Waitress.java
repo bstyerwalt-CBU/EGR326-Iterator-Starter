@@ -5,13 +5,16 @@ package improvement2;
  * from DinerMenu and PancakeHouseMenu
  */
 
+import improvement1.DinerMenu;
+import improvement1.PancakeHouseMenu;
+
 import java.util.Iterator;
 
 public class Waitress {
-	private Menu pancakeHouseMenu;
-	private Menu dinerMenu;
+	private PancakeHouseMenu pancakeHouseMenu; // Modify for Improvement2
+	private DinerMenu dinerMenu; // Modify for Improvement2
  
-	public Waitress(Menu pancakeHouseMenu, Menu dinerMenu) {
+	public Waitress(PancakeHouseMenu pancakeHouseMenu, DinerMenu dinerMenu) {
 		this.pancakeHouseMenu = pancakeHouseMenu;
 		this.dinerMenu = dinerMenu;
 	}

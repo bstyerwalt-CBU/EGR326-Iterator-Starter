@@ -12,13 +12,11 @@ public class PancakeHouseIterator implements Iterator {
 
     @Override
     public Object next() {
-        MenuItem menuItem = items.get(position);
-        position = position + 1;
-        return menuItem;
+        // Implement for Improvement1
     }
 
     @Override
     public boolean hasNext() {
-        return position < items.size();
+        // Implement for Improvement1
     }
 }

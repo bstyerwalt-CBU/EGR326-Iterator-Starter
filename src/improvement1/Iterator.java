@@ -1,8 +1,5 @@
 package improvement1;
 
 public interface Iterator {
-
-    public Object next();
-
-    public boolean hasNext();
+    // Implement for Improvement1
 }

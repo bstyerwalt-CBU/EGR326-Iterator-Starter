@@ -10,18 +10,11 @@ public class DinerMenuIterator implements Iterator {
 
     @Override
     public Object next() {
-        MenuItem menuItem = items[position];
-        position = position + 1;
-        return menuItem;
+        // Implement for Improvement1
     }
 
     @Override
     public boolean hasNext() {
-        // The null check handles the case where the position is greater than the MAX Size of the list
-        if (position >= items.length || items[position] == null) {
-            return false;
-        } else {
-            return true;
-        }
+        // Implement for Improvement1
     }
 }
