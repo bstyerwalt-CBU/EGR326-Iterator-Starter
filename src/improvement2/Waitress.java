@@ -1,17 +1,17 @@
-package improvement1;
+package improvement2;
 
 /*
  * Implement below code carries the burden of working with two different types of collection
  * from DinerMenu and PancakeHouseMenu
  */
 
-import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Waitress {
-	private PancakeHouseMenu pancakeHouseMenu;
-	private DinerMenu dinerMenu;
+	private Menu pancakeHouseMenu;
+	private Menu dinerMenu;
  
-	public Waitress(PancakeHouseMenu pancakeHouseMenu, DinerMenu dinerMenu) {
+	public Waitress(Menu pancakeHouseMenu, Menu dinerMenu) {
 		this.pancakeHouseMenu = pancakeHouseMenu;
 		this.dinerMenu = dinerMenu;
 	}

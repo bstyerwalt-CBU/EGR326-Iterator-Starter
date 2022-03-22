@@ -1,12 +1,13 @@
-package improvement1;
+package improvement2;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 // Lou's PancakeHouse Menu uses ArrayList internally
 // Lou spent a lot of time implementing this code testing and debugging
 // so we DO NOT want to change the internal implementation using MenuItem Array
 
-public class PancakeHouseMenu {
+public class PancakeHouseMenu implements Menu {
 	private ArrayList menuItems;
  
 	public PancakeHouseMenu() {
@@ -42,8 +43,9 @@ public class PancakeHouseMenu {
 		return "Objectville Pancake House Menu";
 	}
 
+	@Override
 	public Iterator createIterator() {
-		return new PancakeHouseIterator(menuItems);
+		return menuItems.iterator();
 	}
 
 }

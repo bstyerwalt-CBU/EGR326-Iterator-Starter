@@ -1,9 +1,11 @@
-package improvement1;
+package improvement2;
+
+import java.util.Iterator;
 // Mel's DinerMenu implementation 
 // Mel spent a lot of time implementing this code testing and debugging
 // so we DO NOT want to change the internal implementation using MenuItem Array
 
-public class DinerMenu {
+public class DinerMenu implements Menu{
 	static final int MAX_ITEMS = 6;
 	int numberOfItems = 0;
 	MenuItem[] menuItems;
@@ -39,6 +41,7 @@ public class DinerMenu {
 		}
 	}
 
+	@Override
 	public Iterator createIterator() {
 		return new DinerMenuIterator(menuItems);
 	}
